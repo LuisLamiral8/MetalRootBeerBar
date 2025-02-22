@@ -1,0 +1,57 @@
+.header {
+  height: 87vh;
+  background-color: transparent;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header h1 {
+  font-size: 8vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+.header h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.header a {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b22222;
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  bottom: 2vh;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.header a:hover {
+  background-color: #8c2c2c;
+  width: 350px;
+}
+.header .getwaves-separator {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+@media (max-width: 550px) {
+  .header h1 {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .header h4 {
+    font-size: 3vw;
+  }
+}

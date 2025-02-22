@@ -1,0 +1,25 @@
+nav{
+  font-family: Roboto !important;
+}
+
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color: gray !important;
+}
+
+.navbar{
+  background-color: #b22222 !important;
+}
+.navbar-brand{
+  font-family: "DM Serif Display", serif;
+  user-select: none !important;
+  color: white !important;
+}
+
+.navbar-nav{
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}

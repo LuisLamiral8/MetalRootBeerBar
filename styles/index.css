@@ -1,0 +1,565 @@
+.header {
+  height: 87vh;
+  background-color: transparent;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header h1 {
+  font-size: 8vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+.header h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.header a {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b22222;
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  bottom: 2vh;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.header a:hover {
+  background-color: #8c2c2c;
+  width: 350px;
+}
+.header .getwaves-separator {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  overflow: hidden;
+  z-index: 3;
+}
+.history {
+  background-color: #b22222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 100px 0;
+  width: 100%;
+  color: white;
+  position: relative;
+  margin-top: 50px;
+}
+.history h2 {
+  font-size: 6vw;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0 10px 0 50px;
+}
+
+.history p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  width: 80%;
+  font-size: 1.3vw;
+  padding: 0 10px 0 50px;
+  margin-bottom: 15px;
+}
+
+.history .separationUp {
+  height: 50px;
+  position: absolute;
+  top: -48px;
+  width: 100%;
+  background-color: #b22222;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.history .separationDown {
+  height: 50px;
+  position: absolute;
+  bottom: -48px;
+  width: 100%;
+  background-color: #b22222;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.history .bands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+.history .bands img {
+  width: 20%;
+}
+
+.events {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 0 100px 0;
+  color: white;
+}
+.events h2 {
+  font-size: 6vw;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0 10px 0 50px;
+}
+.eventsMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 5px;
+}
+.event {
+  width: 100%;
+  background-color: #302120;
+  border: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.event:hover {
+  background-color: #47302f;
+}
+.event .eventLeft {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event .eventLeft svg {
+  width: 30%;
+  height: 30%;
+}
+
+.event .eventRight {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: Montserrat;
+  width: 80%;
+}
+.event .eventRight .eventTitle {
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+.event .eventRight .eventTime {
+  font-weight: 200;
+  font-size: 1vw;
+  color: #b6b6b6;
+}
+.event .eventRight .eventInfo {
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+.loadMoreEvents {
+  width: 100%;
+  background-color: #302120;
+  border: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.loadMoreEvents:hover {
+  background-color: #47302f;
+}
+.loadMoreEvents .eventLeft {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadMoreEvents .eventLeft svg {
+  width: 20%;
+  height: 20%;
+}
+.loadMoreEvents .eventRight {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: Montserrat;
+  width: 80%;
+}
+.loadMoreEvents .eventRight p {
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.menu {
+  background-color: #402c2b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 100px 0 0px 0;
+  width: 100%;
+  color: white;
+  position: relative;
+  margin-top: 50px;
+}
+.menu h2 {
+  font-size: 6vw;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0 10px 0 50px;
+}
+.menu .drinksTitle {
+  width: 90%;
+  margin: 50px auto 0 auto;
+}
+.menu .drinksTitle h5 {
+  font-size: 3vw;
+  font-family: Montserrat;
+}
+.menu .drinksTitle .drinksTitleHr {
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background-color: white;
+}
+.menu .drinksContainer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+}
+.menu .drinksContainer .drinkArrowLeft {
+  width: 10%;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .drinksContainer .drinkArrowLeft:hover {
+  position: relative;
+  left: -3px;
+}
+.menu .drinksContainer .drinkArrowRight {
+  width: 10%;
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .drinksContainer .drinkArrowRight:hover {
+  position: relative;
+  right: -3px;
+}
+.menu .drinksContainer .drink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #b22222;
+  width: 20%;
+  border-radius: 10px;
+  padding: 10px;
+  height: 25vw;
+  gap: 10px;
+  font-family: Montserrat;
+  text-align: center;
+  transition: all 250ms;
+}
+.menu .drinksContainer .drink:hover {
+  width: 21%;
+  cursor: pointer;
+}
+.menu .drinksContainer .drink img {
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid white;
+}
+.menu .drinksContainer .drink h5 {
+  font-size: 1.5vw;
+}
+.menu .drinksContainer .drink p {
+  font-size: 0.8vw;
+}
+.menu .drinksContainer .drink a {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 250ms;
+  text-decoration: none;
+  color: black;
+}
+.menu .drinksContainer .drink a:hover {
+  background-color: rgb(201, 201, 201);
+  width: 95%;
+}
+.menu .snacksContainer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+}
+.menu .snacksContainer .snackArrowLeft {
+  width: 10%;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .snacksContainer .snackArrowLeft:hover {
+  position: relative;
+  left: -3px;
+}
+.menu .snacksContainer .snackArrowRight {
+  width: 10%;
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .snacksContainer .snackArrowRight:hover {
+  position: relative;
+  right: -3px;
+}
+.menu .snacksContainer .snack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #b22222;
+  width: 20%;
+  border-radius: 10px;
+  padding: 10px;
+  height: 65vh;
+  gap: 10px;
+  font-family: Montserrat;
+  text-align: center;
+  transition: all 250ms;
+}
+.menu .snacksContainer .snack:hover {
+  width: 21%;
+  cursor: pointer;
+}
+.menu .snacksContainer .snack img {
+  border-radius: 5px;
+  border: 2px solid white;
+  /* width: 200px; */
+  width: 100%;
+}
+.menu .snacksContainer .snack h5 {
+  font-size: 1.5vw;
+}
+.menu .snacksContainer .snack p {
+  font-size: 0.8vw;
+}
+.menu .snacksContainer .snack a {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 250ms;
+  text-decoration: none;
+  color: black;
+}
+.menu .snacksContainer .snack a:hover {
+  background-color: rgb(201, 201, 201);
+  width: 95%;
+}
+
+@media (max-width: 900px) {
+  .history {
+    padding: 20px 0;
+  }
+  .history p {
+    font-size: 2vw;
+    width: 100%;
+  }
+  .history .bands {
+    gap: 0;
+  }
+  .history .bands img {
+    width: 30%;
+  }
+  .events {
+    padding: 75px 0 30px 0;
+  }
+  .eventsMain {
+    width: 95%;
+  }
+  .event {
+    padding-right: 10px;
+  }
+  .event .eventRight .eventTitle,
+  .loadMoreEvents .eventRight p {
+    font-size: 2.3vw;
+  }
+  .event .eventRight .eventTime {
+    font-size: 2vw;
+  }
+  .event .eventRight .eventInfo {
+    font-size: 2vw;
+  }
+  .menu .drinksTitle h5 {
+    font-size: 5vw;
+  }
+  .menu .drinksContainer .drink:nth-child(5),
+  .menu .snacksContainer .snack:nth-child(5) {
+    display: none;
+  }
+  .menu .drinksContainer,
+  .menu .snacksContainer {
+    justify-content: space-between;
+  }
+  .menu .drinksContainer .drinkArrowLeft,
+  .menu .drinksContainer .drinkArrowRight,
+  .menu .snacksContainer .snackArrowLeft,
+  .menu .snacksContainer .snackArrowRight {
+    width: 30px;
+    height: 30px;
+  }
+  .menu .drinksContainer .drinkArrowLeft svg,
+  .menu .drinksContainer .drinkArrowRight svg,
+  .menu .snacksContainer .snackArrowLeft svg,
+  .menu .snacksContainer .snackArrowRight svg {
+    width: 100%;
+    height: 100%;
+  }
+  .menu .drinksContainer .drink {
+    width: 200px;
+    height: 320px;
+  }
+
+  .menu .snacksContainer .snack {
+    width: 200px;
+    height: 420px;
+  }
+  .menu .drinksContainer .drink h5,
+  .menu .snacksContainer .snack h5 {
+    font-size: 18px;
+  }
+  .menu .drinksContainer .drink p,
+  .menu .snacksContainer .snack p {
+    font-size: 12px;
+  }
+  .menu .drinksContainer .drink button,
+  .menu .snacksContainer .snack button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu .drinksContainer .drink:nth-child(4),
+  .menu .snacksContainer .snack:nth-child(4) {
+    display: none;
+  }
+  .menu {
+    padding: 30px 0 0 0;
+  }
+  .menu .drinksContainer {
+    margin-bottom: 0px;
+  }
+  .menu h2,
+  .events h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .header h1 {
+    font-size: 12vw;
+    text-align: center;
+  }
+  .header h4 {
+    font-size: 3vw;
+  }
+  .event .eventRight .eventTitle,
+  .loadMoreEvents .eventRight p {
+    font-size: 17px;
+  }
+  .event .eventRight .eventTime {
+    font-size: 13px;
+  }
+  .event .eventRight .eventInfo {
+    font-size: 14px;
+  }
+  .event .eventLeft svg,
+  .loadMoreEvents .eventLeft svg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav h5 {
+    display: none;
+  }
+  .nav ul {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .nav ul li a {
+    font-size: 15px;
+  }
+  .history {
+    align-items: center;
+  }
+  .history h2 {
+    padding: 0;
+    font-size: 30px;
+  }
+  .history p {
+    padding: 20px 30px;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .menu .drinksTitle h5 {
+    font-size: 35px;
+  }
+  .menu .drinksContainer .drink:nth-child(3),
+  .menu .snacksContainer .snack:nth-child(3) {
+    display: none;
+  }
+}
