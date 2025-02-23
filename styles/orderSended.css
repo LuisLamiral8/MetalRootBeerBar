@@ -1,5 +1,5 @@
 .header {
-  height: 87vh;
+  height: calc(100vh - 56px);
   background-color: transparent;
   position: relative;
   color: white;
@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 .header h1 {
   font-size: 8vw;
@@ -16,22 +17,26 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
+.redirects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 .header a {
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
   height: 50px;
   border-radius: 5px;
   border: none;
-  background-color: #b22222;
+  background-color: #8c2c2c;
   color: white;
   font-weight: 900;
   font-size: 25px;
   font-family: "Bebas Neue", sans-serif;
-  position: absolute;
-  bottom: 2vh;
   transition: all 250ms;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
 }
 .header a:hover {
@@ -46,12 +51,30 @@
   z-index: 3;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 920px) {
   .header h1 {
-    font-size: 12vw;
-    text-align: center;
+    font-size: 18vw;
   }
   .header h4 {
-    font-size: 3vw;
+    font-size: 4vw;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header a {
+    width: 30vw;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .redirects{
+    width: 90%;
+    gap: 10px;
+  }
+
+  .redirects a{
+    width: 50%;
+    font-size: 5.3vw;
   }
 }

@@ -42,9 +42,6 @@
               <a class="nav-link" href="#events">Eventos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#menu">Menú</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#footer">Ubicacion</a>
             </li>
             <li class="nav-item">
@@ -60,18 +57,89 @@
         </div>
       </div>
     </nav>
-    pedir comideti
+    <main class="orderFood" id="orderFood">
+      <h1>Pedido a mesa</h1>
+      <a class="orderFood-sendButton" href="/order-sended.html">Finalizar</a>
+      <div class="orderFood-main">
+        <form class="orderFood-leftSection">
+          <div class="orderFood-leftSection-item">
+            <label for="idTable">Nro de Mesa:</label>
+            <div class="orderFoodHr"></div>
+            <input type="number" placeholder="..." id="idTable" />
+          </div>
+          <div class="orderFood-leftSection-item">
+            <label for="selection">Item a pedir:</label>
+            <div class="orderFoodHr"></div>
+            <select name="selection" id="selection">
+              <option value="-">-</option>
+              <option value="-">Highway to Hell</option>
+              <option value="-">Whiskey in the Jar</option>
+              <option value="-">Tequila Sunrise of the Dead</option>
+              <option value="-">Blood & Thunder (Trago de la casa)</option>
+              <option value="-">Papas Apocalípticas</option>
+              <option value="-">Nachos del Fuego</option>
+              <option value="-">Alitas del Infierno</option>
+              <option value="-">Mozzarella Rocks</option>
+            </select>
+          </div>
+          <div class="orderFood-leftSection-item">
+            <button>Agregar</button>
+          </div>
+          <div class="orderFood-leftSection-item">
+            <label for="">Comentarios:</label>
+            <div class="orderFoodHr"></div>
+            <textarea
+              type="text"
+              id="comments"
+              placeholder="Me gustaría sin..."
+            ></textarea>
+          </div>
+        </form>
+        <div class="orderFood-rightSection">
+          <h4>Mi pedido</h4>
+          <div class="orderFood-itemsSelected">
+            <div class="orderFood-item">
+              <p>1x</p>
+              <p>Nachos de fuego</p>
+              <p>$1.500</p>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="70%"
+                  height="70%"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="none"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 7h16m-10 4v6m4-6v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="orderFood-total">
+            <div class="orderFood-totalHr"></div>
+            <p>Total: $3000</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer" id="footer">
       <div class="footerLeft">
         <img src="/assets/logo-rounded.png" alt="" />
         <p>Metal Roots Beer Bar CORP.</p>
         <form class="footerEmail">
-          <span> Sumate a Novedades! </span>
-          <input type="email" placeholder="tu_email@hotmail.com" />
+          <div>
+            <span> Sumate a Novedades! </span>
+            <input type="email" placeholder="tu_email@hotmail.com" />
+          </div>
           <a href="#modalEmailRegistered">Enviar</a>
         </form>
       </div>
-
       <ul class="footerRight" id="footer">
         <li class="footerSocial">
           <a href="#"

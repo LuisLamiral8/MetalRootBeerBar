@@ -1,5 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Danfo&display=swap");
+body {
+  background-image: url(../assets/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  /* background-color: rgba(117, 11, 11, 0.328); */
+  background-color: #b22222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.nav h5 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  width: 30%;
+  text-align: center;
+  user-select: none;
+}
+.nav ul {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 2vw;
+}
+.nav ul li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav ul li a {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 250ms;
+}
+.nav ul li a:hover {
+  font-weight: 500;
+  color: rgb(209, 209, 209);
+  padding: 0 5px;
+}
+
 .header {
-  height: 87vh;
+  height: calc(100vh);
   background-color: transparent;
   position: relative;
   color: white;
@@ -38,6 +95,7 @@
   background-color: #8c2c2c;
   width: 350px;
 }
+
 .header .getwaves-separator {
   width: 100%;
   position: absolute;
@@ -228,21 +286,21 @@
   font-family: "Bebas Neue", sans-serif;
   padding: 0 10px 0 50px;
 }
-.menu .menuSubtitle {
+.menu .drinksTitle {
   width: 90%;
   margin: 50px auto 0 auto;
 }
-.menu .menuSubtitle h5 {
+.menu .drinksTitle h5 {
   font-size: 3vw;
   font-family: Montserrat;
 }
-.menu .menuSubtitle .menuSubtitleHr {
+.menu .drinksTitle .drinksTitleHr {
   width: 100%;
   height: 2px;
   margin-top: 10px;
   background-color: white;
 }
-.menu .menuCarousel {
+.menu .drinksContainer {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -250,7 +308,7 @@
   margin: 50px auto;
   gap: 20px;
 }
-.menu .menuCarousel .carouselArrowLeft {
+.menu .drinksContainer .drinkArrowLeft {
   width: 10%;
   transform: rotateY(180deg);
   cursor: pointer;
@@ -259,11 +317,11 @@
   justify-content: center;
   align-items: center;
 }
-.menu .menuCarousel .carouselArrowLeft:hover {
+.menu .drinksContainer .drinkArrowLeft:hover {
   position: relative;
   left: -3px;
 }
-.menu .menuCarousel .carouselArrowRight {
+.menu .drinksContainer .drinkArrowRight {
   width: 10%;
   cursor: pointer;
   transition: all 250ms;
@@ -271,11 +329,11 @@
   justify-content: center;
   align-items: center;
 }
-.menu .menuCarousel .carouselArrowRight:hover {
+.menu .drinksContainer .drinkArrowRight:hover {
   position: relative;
   right: -3px;
 }
-.menu .menuCarousel .carouselItem {
+.menu .drinksContainer .drink {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,30 +342,28 @@
   width: 20%;
   border-radius: 10px;
   padding: 10px;
-  height: 30vw;
+  height: 25vw;
   gap: 10px;
   font-family: Montserrat;
   text-align: center;
   transition: all 250ms;
 }
-.menu .menuCarousel .carouselItem:hover {
+.menu .drinksContainer .drink:hover {
   width: 21%;
   cursor: pointer;
 }
-.menu .menuCarousel .carouselItem img {
+.menu .drinksContainer .drink img {
   border-radius: 5px;
   width: 100%;
   border: 2px solid white;
 }
-.menu .menuCarousel .carouselItem h5 {
+.menu .drinksContainer .drink h5 {
   font-size: 1.5vw;
-  word-break: break-all;
 }
-.menu .menuCarousel .carouselItem p {
+.menu .drinksContainer .drink p {
   font-size: 0.8vw;
-  word-break: break-all;
 }
-.menu .menuCarousel .carouselItem a {
+.menu .drinksContainer .drink a {
   width: 80%;
   background-color: white;
   border-radius: 5px;
@@ -320,35 +376,270 @@
   text-decoration: none;
   color: black;
 }
-.menu .menuCarousel .carouselItem a:hover {
+.menu .drinksContainer .drink a:hover {
+  background-color: rgb(201, 201, 201);
+  width: 95%;
+}
+.menu .snacksContainer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+  margin: 50px auto;
+  gap: 20px;
+}
+.menu .snacksContainer .snackArrowLeft {
+  width: 10%;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .snacksContainer .snackArrowLeft:hover {
+  position: relative;
+  left: -3px;
+}
+.menu .snacksContainer .snackArrowRight {
+  width: 10%;
+  cursor: pointer;
+  transition: all 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .snacksContainer .snackArrowRight:hover {
+  position: relative;
+  right: -3px;
+}
+.menu .snacksContainer .snack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #b22222;
+  width: 20%;
+  border-radius: 10px;
+  padding: 10px;
+  height: 65vh;
+  gap: 10px;
+  font-family: Montserrat;
+  text-align: center;
+  transition: all 250ms;
+}
+.menu .snacksContainer .snack:hover {
+  width: 21%;
+  cursor: pointer;
+}
+.menu .snacksContainer .snack img {
+  border-radius: 5px;
+  border: 2px solid white;
+  /* width: 200px; */
+  width: 100%;
+}
+.menu .snacksContainer .snack h5 {
+  font-size: 1.5vw;
+}
+.menu .snacksContainer .snack p {
+  font-size: 0.8vw;
+}
+.menu .snacksContainer .snack a {
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 250ms;
+  text-decoration: none;
+  color: black;
+}
+.menu .snacksContainer .snack a:hover {
   background-color: rgb(201, 201, 201);
   width: 95%;
 }
 
-@media (max-width: 1000px) {
-  .menu {
-    padding-top: 50px;
-  }
-  .menu h2 {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .menu .menuCarousel .carouselItem:nth-child(5) {
-    display: none;
-  }
-  .menu .menuCarousel .carouselItem {
-    width: 33%;
-    height: 45vh;
-  }
-  .menu .menuCarousel .carouselItem p {
-    font-size: 1vw;
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1d201f;
+  padding: 50px 0 20px 0;
+}
+.footer .footerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.footer .footerLeft img {
+  width: 40%;
+}
+.footer .footerLeft p {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  font-size: 2.3vw;
 }
 
+.footer .footerLeft .footerEmail {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.footer .footerLeft .footerEmail span {
+  font-size: 15px;
+}
+.footer .footerLeft .footerEmail input {
+  border: none;
+  font-size: 12px;
+  width: 20%;
+  padding-left: 5px;
+  height: 30px;
+  border-radius: 5px;
+}
+.footer .footerLeft .footerEmail input:focus {
+  outline: none;
+}
+
+.footer .footerLeft .footerEmail a {
+  height: 30px;
+  background-color: #b22222;
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-weight: 800;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 250ms;
+}
+.footer .footerLeft .footerEmail a:hover {
+  background-color: #cb2626;
+}
+.footer .footerRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.footer .footerRight li a {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 900;
+}
+.footer .footerRight .footerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer .footerRight .footerSocial a svg {
+  width: 40px;
+  height: 40px;
+  transition: all 250ms;
+  border-radius: 5px;
+  padding: 2px;
+}
+.footer .footerRight .footerSocial a:hover svg {
+  background: rgba(255, 255, 255, 0.422);
+  width: 45px;
+  height: 45px;
+}
+
+#modalAddedItem,
+#modalEmailRegistered {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 320px;
+  width: 50%;
+  border-radius: 10px;
+  /* height: 33vh; */
+  overflow: auto;
+  background-color: #1d201f;
+  margin: 250px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 20px 10px;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  display: none;
+}
+#modalAddedItem header,
+#modalEmailRegistered header {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 2vw;
+  text-align: center;
+}
+#modalAddedItem main,
+#modalEmailRegistered main {
+  margin: 30px 0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1vw;
+}
+#modalAddedItem footer,
+#modalEmailRegistered footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modalAddedItem footer a,
+#modalEmailRegistered a {
+  width: 80%;
+  background-color: #b22222;
+  padding: 5px 0;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  transition: all 250ms;
+}
+#modalAddedItem footer a:hover,
+#modalEmailRegistered a:hover {
+  width: 100%;
+  background-color: #d32a2a;
+}
+
+#modalAddedItem:target,
+#modalEmailRegistered:target {
+  display: block;
+}
 @media (max-width: 900px) {
+  .nav h5 {
+    font-size: 2.5vw;
+  }
+  .nav ul {
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  .nav ul li a {
+    font-size: 2.2vw;
+  }
   .history {
     padding: 20px 0;
   }
@@ -427,37 +718,12 @@
   .menu .snacksContainer .snack button {
     font-size: 13px;
   }
-}
 
-@media (max-width: 768px) {
-  .menu .menuCarousel .carouselItem:nth-child(4) {
-    display: none !important;
+  .footer {
+    padding: 50px 50px 20px 50px;
   }
-  .menu .menuCarousel .carouselArrowLeft,
-  .menu .menuCarousel .carouselArrowRight {
-    width: 50px;
-    height: 50px;
-  }
-  .menu .menuCarousel .carouselArrowLeft svg,
-  .menu .menuCarousel .carouselArrowRight svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .menu .menuCarousel .carouselItem {
-    width: 50%;
-    height: 47vh;
-  }
-  .menu .menuCarousel .carouselItem img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .menu .menuCarousel .carouselItem h5 {
-    font-size: 3vw;
-  }
-  .menu .menuCarousel .carouselItem p {
-    font-size: 1.5vw;
+  .footer .footerLeft {
+    gap: 20px;
   }
 }
 
@@ -478,30 +744,38 @@
     text-align: center;
     padding: 0;
   }
+
+  #modalAddedItem,
+  #modalEmailRegistered {
+    width: 80%;
+  }
+  #modalAddedItem header,
+  #modalEmailRegistered header {
+    font-size: 4vw;
+  }
+  #modalAddedItem main,
+  #modalEmailRegistered main {
+    font-size: 3vw;
+  }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 550px) {
+  .nav h5 {
+    width: 40%;
+    font-size: 3vw;
+  }
+  .nav ul {
+    width: 60%;
+  }
+  .nav ul li a {
+    font-size: 12px;
+  }
   .header h1 {
     font-size: 12vw;
     text-align: center;
   }
   .header h4 {
     font-size: 3vw;
-  }
-  .history {
-    align-items: center;
-  }
-  .history h2 {
-    font-size: 10vw;
-    padding: 0;
-    text-align: center;
-  }
-  .history p{
-    font-size: 3vw;
-    padding: 0 30px 20px 30px;
-    margin: 0;
-    text-align: center;
-    font-weight: 300;
   }
   .event .eventRight .eventTitle,
   .loadMoreEvents .eventRight p {
@@ -517,31 +791,36 @@
   .loadMoreEvents .eventLeft svg {
     width: 80%;
   }
-  .loadMoreEvents .eventRight p{
-    margin: 0 !important;
+  .footer {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .footer .footerRight {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer .footerRight {
+    align-items: center;
     width: 100%;
     text-align: center;
   }
-
-  .menu .menuSubtitle h5 {
-    font-size: 6vw;
+  .footer .footerRight .footerSocial {
+    justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
   }
-
-  .menu .menuCarousel .carouselItem:nth-child(3) {
-    display: none !important;
+  .footer .footerRight .footerSocial a svg {
+    width: 15vw;
+    height: 15vw;
   }
-  .menu .menuCarousel .carouselItem{
-    width: 80%;
-    height: 55vh;
+  .footer .footerLeft {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
   }
-  .menu .menuCarousel .carouselItem h5{
-    font-size: 6vw;
-    font-weight: 800;
+  .footer .footerLeft p {
+    font-size: 7vw;
   }
-  .menu .menuCarousel .carouselItem p{
-    font-size: 3vw;
-  }
-
 }
 
 @media (max-width: 420px) {
@@ -578,4 +857,5 @@
   .menu .snacksContainer .snack:nth-child(3) {
     display: none;
   }
+ 
 }

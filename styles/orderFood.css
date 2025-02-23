@@ -1,0 +1,272 @@
+.orderFood {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px 0 50px 0;
+  color: white;
+  height: calc(100vh - 56px);
+  position: relative;
+}
+.orderFood-sendButton {
+  background: #b22222;
+  color: white;
+  font-family: bebas neue;
+  font-size: 25px;
+  width: 40%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms;
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.orderFood-sendButton:hover {
+  background-color: #ce2e2e;
+}
+
+.orderFood h1 {
+  font-size: 6vw;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10px 0 0px 0;
+}
+.orderFood .orderFood-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+.orderFood-leftSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5vw;
+  gap: 1vw;
+  flex-direction: column;
+}
+.orderFoodHr {
+  width: 50%;
+  height: 2px;
+  background-color: white;
+}
+.orderFood-leftSection-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.orderFood-leftSection-item button {
+  background: #b22222;
+  color: white;
+  font-family: montserrat;
+  font-weight: 800;
+  font-size: 1.3vw;
+  width: 40%;
+  border-radius: 5px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.orderFood-leftSection-item button:hover {
+  background-color: #ce2e2e;
+}
+.orderFood-leftSection-item label {
+  padding: 0 20px 0 0;
+  border: none;
+  font-size: 1.8vw;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-weight: 800;
+}
+.orderFood-leftSection-item input,
+.orderFood-leftSection-item select {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.orderFood-leftSection-item input:focus {
+  outline: none;
+}
+
+.orderFood-leftSection-item textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.orderFood-rightSection {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  width: 50%;
+  background-color: #402c2b;
+  height: 100%;
+  min-height: 50vh;
+  border-radius: 10px;
+}
+.orderFood .orderFood-main .orderFood-rightSection h4 {
+  font-family: bebas neue;
+  font-size: 40px;
+}
+
+.orderFood-itemsSelected {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+.orderFood-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #8c2c2c;
+  border-radius: 10px;
+}
+.orderFood-item p {
+  margin: 0;
+}
+
+.orderFood-total {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.orderFood-total p {
+  margin: 0;
+  font-family: bebas neue;
+  font-size: 30px;
+}
+.orderFood-totalHr {
+  background: white;
+  width: 100%;
+  height: 2px;
+}
+
+.orderFood-item button {
+  background-color: #cb2626;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.orderFood-item button:hover {
+  background-color: #ce2e2e;
+}
+
+@media (max-width: 900px) {
+  .orderFood .orderFood-main {
+    margin-top: 25px;
+    width: 98%;
+  }
+  .orderFood .orderFood-main .orderFood-leftSection {
+    padding-left: 10px;
+    justify-content: flex-start;
+    min-height: 50vh;
+  }
+  .orderFood .orderFood-main .orderFood-leftSection .orderFood-sendButton {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .orderFoodHr {
+    width: 50%;
+  }
+  .orderFood-leftSection-item input,
+  .orderFood-leftSection-item select,
+  .orderFood-leftSection-item textarea {
+    width: 95%;
+  }
+}
+@media (max-width: 720px) {
+  .orderFood {
+    height: 100%;
+    padding-bottom: 150px;
+  }
+  .orderFood h1 {
+    font-size: 90px;
+  }
+  .orderFood .orderFood-main {
+    flex-direction: column;
+  }
+  .orderFood .orderFood-main .orderFood-leftSection {
+    width: 95%;
+    min-height: initial;
+    padding: 30px 0;
+  }
+  .orderFood-leftSection-item button {
+    font-size: 15px;
+  }
+
+  .orderFood .orderFood-main .orderFood-rightSection h4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .orderFood .orderFood-main .orderFood-rightSection {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+  .orderFood-total {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+  .orderFood-totalHr {
+    width: 90%;
+  }
+  .orderFood-itemsSelected {
+    height: 100% !important;
+  }
+
+  .orderFood-leftSection-item label {
+    font-size: 4vw;
+  }
+  .orderFood-leftSection-item input,
+  .orderFood-leftSection-item select,
+  .orderFood-leftSection-item textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .orderFood h1 {
+    font-size: 40px;
+  }
+}

@@ -18,7 +18,7 @@
       href="/assets/logo-rounded.png"
       type="image/x-icon"
     />
-    <title>Metal Root Beer Bar</title>
+    <title>Pedido Recibido</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
@@ -47,9 +47,6 @@
               <a class="nav-link" href="#events">Eventos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#menu">Menú</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#footer">Ubicacion</a>
             </li>
             <li class="nav-item">
@@ -65,22 +62,26 @@
         </div>
       </div>
     </nav>
-    <header class="header" id="home">
+    <main class="header" id="home">
       <h1>Gracias!</h1>
       <h4>Recibimos tu pedido, en breve estaremos por tu mesa.</h4>
-      <a href="/index.html">Volver al inicio</a>
-    </header>
+      <div class="redirects">
+        <a href="/order-food.html">Realizar otro pedido</a>
+        <a href="/index.html">Volver al inicio</a>
+      </div>
+    </main>
     <footer class="footer" id="footer">
       <div class="footerLeft">
         <img src="/assets/logo-rounded.png" alt="" />
         <p>Metal Roots Beer Bar CORP.</p>
         <form class="footerEmail">
-          <span> Sumate a Novedades! </span>
-          <input type="email" placeholder="tu_email@hotmail.com" />
+          <div>
+            <span> Sumate a Novedades! </span>
+            <input type="email" placeholder="tu_email@hotmail.com" />
+          </div>
           <a href="#modalEmailRegistered">Enviar</a>
         </form>
       </div>
-
       <ul class="footerRight" id="footer">
         <li class="footerSocial">
           <a href="#"
