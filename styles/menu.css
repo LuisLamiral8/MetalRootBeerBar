@@ -24,6 +24,9 @@
   font-family: bebas neue;
   font-size: 2vw;
 }
+.responsiveFilters {
+  display: none;
+}
 .asideCategory {
   display: flex;
   padding-left: 5px;
@@ -189,4 +192,125 @@
 .paginationCenter button:hover {
   background-color: white;
   color: black !important;
+}
+
+@media (max-width: 1000px) {
+  .aside {
+    width: 30%;
+  }
+  .aside h5 {
+    font-size: 3vw;
+  }
+  .asideCategory h6 {
+    font-size: 2vw;
+  }
+  .asideCategory ul li {
+    font-size: 1.5vw;
+  }
+  .asideCategory select {
+    width: 80%;
+  }
+  .productsContainer h1 {
+    font-size: 6vw;
+  }
+  .productsMain {
+    gap: 5px;
+  }
+  .item img {
+    width: 20%;
+    height: 80px;
+  }
+  .item .itemCenter {
+    width: 70%;
+  }
+  .item .itemRight {
+    width: 20%;
+  }
+  .itemRight button {
+    width: 70%;
+    height: 20px;
+    font-size: 15px;
+  }
+  .paginationLeft,
+  .paginationRight {
+    width: 30px;
+    height: 30px;
+  }
+  .paginationCenter button {
+    font-size: 20px;
+    width: 25px;
+    height: 30px;
+  }
+
+  .itemCenter {
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .itemCenter {
+    font-size: 10px;
+  }
+  .itemRight {
+    gap: 0;
+  }
+  .itemRight p {
+    margin: 0 !important;
+    font-size: 18px;
+  }
+  .itemRight button {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+  .productsContainer {
+    width: 100%;
+  }
+  .productsMain {
+    width: 95%;
+  }
+  .responsiveFilters {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .responsiveFiltersMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+  }
+  .responsiveFiltersMain button {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-family: bebas neue;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    transition: all 250ms;
+  }
+  .responsiveFiltersMain button:hover {
+    text-decoration-color: #d01c1c;
+  }
+  .responsiveFiltersHr {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .productsContainer h1 {
+    font-size: 8vw;
+  }
 }
